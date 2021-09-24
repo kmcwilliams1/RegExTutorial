@@ -1,0 +1,29 @@
+header{
+    padding-bottom: 0px;
+}
+
+
+/* why does display felx mess up the lesson buttons */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lessonContainer{
+
+    background-color: grey;
+    max-width: 10em;
+    height: 41em;
+}
+
+.list-group{
+    max-width: fit-content;
+    padding-left: 10px;
+    /* position: relative;
+    align-items: center; */
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
