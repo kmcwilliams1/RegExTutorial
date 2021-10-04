@@ -23,31 +23,28 @@
 <body>
 
     <main>
-
         <div class="column">
             <div class="lessonContainer">
                 <div class="list-group">
                     <!-- when '/lesson' === current lesson, add class 'disabled' & 'active' to it -->
-                    <a href="#" class="list-group-item list-group-item-action disabled active">Lesson 1</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 2</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 3</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 4</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 5</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 6</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 7</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 8</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lesson 9</a>
+                    <a href="#" id="lesson1" class="list-group-item list-group-item-action disabled active">Lesson 1</a>
+                    <a href="#" id="lesson2" class="list-group-item list-group-item-action">Lesson 2</a>
+                    <a href="#" id="lesson3" class="list-group-item list-group-item-action">Lesson 3</a>
+                    <a href="#" id="lesson4" class="list-group-item list-group-item-action">Lesson 4</a>
+                    <a href="#" id="lesson5" class="list-group-item list-group-item-action">Lesson 5</a>
+                    <a href="#" id="lesson6" class="list-group-item list-group-item-action">Lesson 6</a>
+                    <a href="#" id="lesson7" class="list-group-item list-group-item-action">Lesson 7</a>
+                    <a href="#" id="lesson8" class="list-group-item list-group-item-action">Lesson 8</a>
+                    <a href="#" id="lesson9" class="list-group-item list-group-item-action">Lesson 9</a>
                 </div>
             </div>
         </div>
 
-        <section>
-            This is the text to talk about the lesson of that unit
-            <textarea class="answer" placeholder="this is where you type your answer"></textarea>
-            <button class="previous">Previous Lesson</button><button class="next">Next Lesson</button>
-        </section>
+
+
+        <!-- {{{ body }}} -->
+
     </main>
-    <!-- {{{ body }}} -->
 
 
 
@@ -58,6 +55,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

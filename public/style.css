@@ -2,11 +2,15 @@ header{
     padding-bottom: 0px;
 }
 
-
-/* why does display felx mess up the lesson buttons */
 main{
     display: flex;
+    flex-direction: row;
+}
+/* why does display flex mess up the lesson buttons */
+.lessonFlex{
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .lessonContainer{
@@ -17,13 +21,22 @@ main{
 }
 
 .list-group{
-    max-width: fit-content;
+    max-width: max-content;
     padding-left: 10px;
-    /* position: relative;
-    align-items: center; */
     margin: 10px;
     padding: 10px;
 }
 
 
+.column{
+    display: flex;
+}
 
+.column span{
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+    
+}

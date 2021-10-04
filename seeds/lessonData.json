@@ -1,0 +1,10 @@
+[
+    {
+      "title": "Alternations",
+      "description": "The word 'or' is performed with a pipe symbol '|' and allows matching of character sets on either side.
+      For instance to match with both 'I love cats' or 'I love dogs', one would simply write 'I love cats|dogs.'",
+      "question": "Suppose your email is 'email@email.com' and your phone number is '123-456-7890', how would you write code to match
+      the following phrases: 'you can reach me at email@email.com' or 'you can reach me at 123-456-7890'",
+      "answer": "you can reach me at email@email.com|123-456-7890"
+    }
+]

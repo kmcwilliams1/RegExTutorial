@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS regex_db;
+CREATE DATABASE regex_db;
