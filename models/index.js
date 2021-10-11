@@ -1,3 +1,3 @@
-import Lesson from './Lesson';
+const Lesson = require('./Lesson')
 
-export default {Lesson};
+module.exports = {Lesson};

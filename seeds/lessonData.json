@@ -1,10 +1,56 @@
 [
-    {
-      "title": "Alternations",
-      "description": "The word 'or' is performed with a pipe symbol '|' and allows matching of character sets on either side.
-      For instance to match with both 'I love cats' or 'I love dogs', one would simply write 'I love cats|dogs.'",
-      "question": "Suppose your email is 'email@email.com' and your phone number is '123-456-7890', how would you write code to match
-      the following phrases: 'you can reach me at email@email.com' or 'you can reach me at 123-456-7890'",
-      "answer": "you can reach me at email@email.com|123-456-7890"
-    }
+  {
+    "title": "Literals",
+    "description": "Literals are used to match a specific letter, number, or character. The letter \"l\" will match \"'l'\", \"4\" will match \"'4'\", etc.",
+    "question": "How would you match the phrase \"purple people eater\"?",
+    "answer": "purple people eater"
+  },
+  {
+    "title": "Alternations",
+    "description": "The word \"or\" is performed with a pipe symbol \"|\" and allows matching of character sets on either side. For instance to match with both \"I love cats\" or \"I love dogs\", one would simply write \"I love cats|dogs.\"",
+    "question": "Suppose your email is \"email@email.com\" and your phone number is \"123-456-7890\", how would you write code to match the following phrases: \"you can reach me at email@email.com\" or \"you can reach me at 123-456-7890\"",
+    "answer": "you can reach me at email@email.com|123-456-7890"
+  },
+  {
+    "title": "Grouping",
+    "description": "Similar to alternations, grouping is a good way to include several searchses with similar words. Anything within parenthesis and between a pipe symbol will be included. Again, to write both \"I love cats\" or \"I love dogs\", the answer is I love (cats|dogs)",
+    "question": "How can you refactor your email (email@email.com) and phone number (123-456-7890) to say \"you can reach me at...\" in a grouping fashion?",
+    "answer": "you can reach me at (email@email.com|123-456-7890)"
+  },
+  {
+    "title": "Anchors",
+    "description": "Anchors are used to match specific inputs. Anything put in between a \"^\" and a \"$\" will be searched for exactly as typed.",
+    "question": "Using anchors, what would be used to return the following: b4TRfp&!rvz83%2#qb*",
+    "answer": "^b4TRfp&!rvz83%2#qb*$"
+  },
+  {
+    "title": "Character Sets",
+    "description": "Anything inside a set of []'s will be matched with the surrounding expression, for example, cat, dog, and egg can be found by inputing [c d e][a o g][t g g] ",
+    "question": "What input would be needed to retun all 3 letter words in the following sentence? Tom has a hat (Case sesitive!)",
+    "answer": "[T h h][o a a][m s t]"
+  },
+  {
+    "title": "Wildcard",
+    "description": "A \".\" can be used as filler for any letter, number, or special character. ",
+    "question": "How would you spell the word \"H3||O\" with wildcards?",
+    "answer": "....."
+  },
+  {
+    "title": "Ranges",
+    "description": "A range takes all consecutive elements within a list and matches them accordingly. \"I have [2-9] [b-h]ats\" will return \"I have 9 bats\", \"I have 7 cats\" and \"I have 3 hats\" ",
+    "question": "How would you match with only \"cub\" \"dog\" and \"elk\"? *Remember to use both ranges and character sets*",
+    "answer": "[c-e][u o l][b g k]"
+  },
+  {
+    "title": "Quantifiers",
+    "description": "A \"?\" is used to indicate optional words. For instance, \" I love (big)? dogs\" will match with both \"I love big dogs\" and \"I love dogs.\"",
+    "question": "What syntax would be used to match \"1 dog in the park\", \"2 dogs in the park\" and \"4 dogs in the park\"?",
+    "answer": "(1-4) dog(s)? in the park"
+  },
+  {
+    "title": "Kleene +",
+    "description": " A \"+\" will match the previous letter or number with any length. For instance \"meo+w\" will match \"meow\" , \"meoow\" and \"meooooooow\"",
+    "question": "Two people have varried levels of surprised. How can you match both \"wow\" and \"wooooooow\"",
+    "answer": "wo+w"
+  }
 ]

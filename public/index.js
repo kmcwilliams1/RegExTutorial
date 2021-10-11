@@ -1,15 +1,15 @@
-const answerEl = document.querySelector('.answer')
-const previousQuestionEl = document.querySelector('.previous')
-const nextQuestionEl = document.querySelector('.next')
+const { json } = require("stream/consumers")
 
-
-
+const answerEl = document.querySelector('#lessonAnswer')
+const previousQuestionEl = document.querySelector('#lessonPrevious')
+const nextQuestionEl = document.querySelector('#lessonNext')
 
 
 function checkAnswer() {
-    console.log(questions[currentIndex].correctAnswer)
-    if (answerEl.value === questions[currentIndex].correctAnswer) {
-        button.style.color = "green";
+    let answer = answerEl.value
+    console.log(answer)
+    if (answerEl.value === Lesson.answer) {
+        nextQuestionEl.style.color = "green";
         nextQuestionEl.addEventListener('click')
     }
 }
