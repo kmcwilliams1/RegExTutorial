@@ -1,14 +1,16 @@
 
 
-<link rel="stylesheet" href="/style.css">
+
 
 <div class="lesson">
     <span id = 'lessonTitle'><h2>{{lesson.title}}</h2></span>
     <span id = 'lessonDescription'><h4>{{lesson.description}} </h4></span>
     <span id = 'lessonQuestion'>{{lesson.question}}</span>
-    <span><textarea id = 'lessonAnswer' placeholder="this is where you type your answer"></textarea></span>
-    <button id = 'lessonPrevious'>Previous Lesson</button><button id = 'lessonNext'>Next Lesson</button>
-    <button id = 'checkAnswer' onClick="checkAnswer()">Check Answer</button>
+    <p><textarea id = 'lessonAnswer' placeholder="this is where you type your answer"></textarea></p>
+    {{!-- <button id = 'lessonPrevious'>Previous Lesson</button><button id = 'lessonNext'>Next Lesson</button> --}}
+    <button id = 'checkAnswer' onClick="checkAnswer()" data-value = "{{lesson.answer}}" >Check Answer</button>
+    <span id='checkmark' class='hidden'>✅✅✅</span>
+    <span id='xmark' class='hidden'>❌❌❌</span>
 </div>
 
 <script src="/index.js"></script>

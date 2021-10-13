@@ -1,3 +1,3 @@
 const Lesson = require('./Lesson')
 
-module.exports = {Lesson};
+module.exports = { Lesson };

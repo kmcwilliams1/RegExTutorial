@@ -18,6 +18,9 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
+    "filesystem": "^1.0.1",
+    "flow-inspector": "^1.1.1",
+    "fs": "0.0.1-security",
     "mysql2": "^2.3.0",
     "node": "^16.10.0",
     "sequelize": "^6.6.5"

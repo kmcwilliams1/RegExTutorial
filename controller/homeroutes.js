@@ -24,14 +24,16 @@ app.get('/lesson/:id', async (req, res) => {
       });
       if (lessonData) {
         const lesson = lessonData.get({ plain: true });
-  
+        console.log('getting lesson route')
         res.render('lesson', { lesson });  // handlebars
       } else {
         res.status(404).end();
+        console.log('not getting lesson route')
       }
     } catch (err) {
       console.log(err)
       res.status(500).json(err);
+      console.log('failing getting lesson route')
     }
   });
 

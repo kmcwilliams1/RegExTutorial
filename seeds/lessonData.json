@@ -1,3 +1,4 @@
+
 [
   {
     "title": "Literals",
@@ -30,7 +31,7 @@
     "answer": "[T h h][o a a][m s t]"
   },
   {
-    "title": "Wildcard",
+    "title": "Wildcards",
     "description": "A \".\" can be used as filler for any letter, number, or special character. ",
     "question": "How would you spell the word \"H3||O\" with wildcards?",
     "answer": "....."
