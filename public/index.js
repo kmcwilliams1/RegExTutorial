@@ -11,7 +11,10 @@ function checkAnswer() {
     console.log(answerEl.value)
     if (answerEl.value === this.dataset.value) {
         checkmarkEl.classList.remove('hidden');
+        xmarkEl.classList.add('hidden');
+
     } else {
         xmarkEl.classList.remove('hidden');
+        checkmarkEl.classList.add('hidden');
     }
 };
